@@ -10,8 +10,8 @@ const schema = z.object({
   APP_ENV: z.enum(['development', 'staging', 'production']).default('development'),
   IS_DEV: z.preprocess(() => process.env.APP_ENV === 'development', z.boolean()),
   PORT: z.coerce.number().optional().default(3001),
-  MONGO_URI: z.string().default('mongodb+srv://root:qwertyuiop@cluster0.9uwkfkv.mongodb.net'),
-  MONGO_DB_NAME: z.string().default('Cluster0'),
+  MONGO_URI: z.string().default('mongodb+srv://casder:oVjjlUd6okCgqjQO@cluster0.q9d6k.mongodb.net'),
+  MONGO_DB_NAME: z.string().default('pets'),
   API_URL: z.string().default('http://localhost:3001'),
   WEB_URL: z.string().default('http://localhost:3002'),
 });
